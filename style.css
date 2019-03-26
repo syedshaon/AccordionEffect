@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Lato',
+        sans-serif;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.anotherDiv {
+    margin: 30px;
+}
+
+#accordion {
+    width: 807px;
+    margin: 0 auto;
+}
+
+#accordHead {
+    background-color: #bf082f;
+    height: 43px;
+    border: 1px solid rgb(221, 221, 221);
+    color: white;
+    font-weight: 700;
+    position: relative;
+}
+
+#accordHead span {
+    display: block;
+    width: 80%;
+    max-width: 750px;
+    float: left;
+    height: 21px;
+    padding: 10px 30px 10px 10px;
+}
+
+#accordHead i {
+    width: 10%;
+    max-width: 28px;
+    float: right;
+    height: 21px;
+    padding: 10px 50px 10px 10px;
+}
+
+#accordContent {
+    /*padding: 35px 10px 50px 10px;*/
+    background-color: rgb(237, 237, 237);
+    font-weight: 400;
+    height: 0;
+    overflow: hidden;
+    transition: height .5s linear;
+
+}
+
+#accordContentText {
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+    padding: 35px 10px 50px 10px;
+}
+
+#accordContentCall {
+    display: block;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: rgb(187, 18, 34);
+    color: white;
+    margin-top: 30px;
+
+}
+
+#accordContentVid {
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+    margin-bottom: 20px;
+    padding: 35px 10px 50px 10px;
+}
+
+#accordContentVid div {
+    width: 100%;
+}
+
+#accordContentVid div iframe {
+    width: 100%;
+    height: 220px;
+}
+
+.hide {
+    display: none;
+    transition: display 20s;
+}
+
+.show {
+    display: block;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
