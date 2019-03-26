@@ -2,6 +2,10 @@
 
 <head>
     <title>aaaaaaaaaaaaaa</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <!-- Display webpage in edge mode/IE in highest supported mode -->
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="reset.css">
@@ -22,10 +26,15 @@
 
     <div id="accordion">
 
-        <div id="accordHead"><span>Why
-                Hire Hire Us? </span><i id="toShow" class="fa fa-chevron-down show"></i><i id="toHide"
+        <div id="accordHead"><span>Why Hire Us? </span><i id="toShow" class="fa fa-chevron-down show"></i><i id="toHide"
                 class="fa fa-chevron-up hide"></i></div>
         <div id="accordContent" class="clearfix ">
+
+            <div id="accordContentVid">
+                <div> <iframe src="https://player.vimeo.com/video/189376725" frameborder="0"
+                        allowfullscreen="allowfullscreen"></iframe>
+                </div>
+            </div>
 
             <div id="accordContentText">
                 <p>The Rosenblum Law Firm is the largest and <a
@@ -35,11 +44,7 @@
                     results.</p>
                 <a id="accordContentCall" href="tel:888-883-5529">Call For Free Consult: 888-883-5529</a>
             </div>
-            <div id="accordContentVid">
-                <div> <iframe src="https://player.vimeo.com/video/189376725" frameborder="0"
-                        allowfullscreen="allowfullscreen"></iframe></script>
-                </div>
-            </div>
+
 
         </div>
 
@@ -81,7 +86,7 @@
             show.classList.toggle("hide");
             hide.classList.toggle("show");
             hide.classList.toggle("hide");
-            content.style.height = '300px';
+            content.style.height = 'auto';
         });
         hide.addEventListener("click", function () {
             show.classList.toggle("show");

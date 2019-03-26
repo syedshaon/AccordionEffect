@@ -13,11 +13,18 @@ body {
 }
 
 .anotherDiv {
-    margin: 30px;
+    display:block;
+    width: 100%;
+    max-width: 807px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: aqua;
 }
 
 #accordion {
-    width: 807px;
+    display:block;
+    width: 100%;
+    max-width: 807px;
     margin: 0 auto;
 }
 
@@ -33,7 +40,7 @@ body {
 #accordHead span {
     display: block;
     width: 80%;
-    max-width: 750px;
+    max-width: 700px;
     float: left;
     height: 21px;
     padding: 10px 30px 10px 10px;
@@ -41,7 +48,7 @@ body {
 
 #accordHead i {
     width: 10%;
-    max-width: 28px;
+    max-width: 20px;
     float: right;
     height: 21px;
     padding: 10px 50px 10px 10px;
@@ -60,7 +67,6 @@ body {
 #accordContentText {
     width: 50%;
     float: left;
-    padding: 0 15px;
     padding: 35px 10px 50px 10px;
 }
 
@@ -76,7 +82,7 @@ body {
 
 #accordContentVid {
     width: 50%;
-    float: left;
+    float: right;
     padding-right: 15px;
     margin-bottom: 20px;
     padding: 35px 10px 50px 10px;
@@ -93,7 +99,6 @@ body {
 
 .hide {
     display: none;
-    transition: display 20s;
 }
 
 .show {
@@ -104,4 +109,21 @@ body {
     content: "";
     clear: both;
     display: table;
+}
+
+@media only screen and (max-width: 810px) {
+    #accordContentVid {
+        width: 100%;
+        float: left;
+    }
+
+    #accordContentText {
+        width: 100%;
+        float: left;
+    }
+
+    #accordContentVid div iframe {
+        width: 100%;
+        height: 50%;
+    }
 }
