@@ -5,11 +5,15 @@
 body {
     font-size: 18px;
     line-height: 28px;
-    font-family: 'Lato',
-        sans-serif;
+
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #333;
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .anotherDiv {
@@ -18,7 +22,7 @@ body {
     max-width: 807px;
     padding: 20px;
     margin: 0 auto;
-    background-color: rgb(241, 241, 238);
+    background-color: white;
 }
 
 #accordion {
@@ -33,17 +37,17 @@ body {
     height: 43px;
     border: 1px solid rgb(221, 221, 221);
     color: white;
-    font-weight: 700;
     position: relative;
 }
 
 #accordHead span {
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 710px;
     float: left;
-    height: 21px;
-    padding: 10px 30px 10px 10px;
+    height: 18px;
+    margin: 5px 30px 15px 10px;
+
 }
 
 #accordHead i {
@@ -57,7 +61,6 @@ body {
 #accordContent {
     /*padding: 35px 10px 50px 10px;*/
     background-color: rgb(237, 237, 237);
-    font-weight: 400;
     max-height: 0;
     overflow: hidden;
     transition: max-height 1s linear;
