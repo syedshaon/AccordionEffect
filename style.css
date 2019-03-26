@@ -58,8 +58,9 @@ body {
     /*padding: 35px 10px 50px 10px;*/
     background-color: rgb(237, 237, 237);
     font-weight: 400;
-    height: 0;
+    max-height: 0;
     overflow: hidden;
+    transition: max-height 1s linear;
 
 }
 
@@ -68,6 +69,7 @@ body {
     float: left;
     padding: 35px 10px 50px 10px;
 }
+
 
 #accordContentCall {
     display: block;

@@ -17,11 +17,17 @@
 <body>
     <div class="anotherDiv">
         <h2>Accordion for Upwork</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.</p>
+        <p>Create an HTML accordion that is responsive and works with Google AMP.
+
+            It should look like the accordion titled "why hire us" that is on this page:
+            <a
+                href="https://traffictickets.com/consequences-ny-nj-traffic-tickets-legal-undocumented-immigrants/">https://traffictickets.com/consequences-ny-nj-traffic-tickets-legal-undocumented-immigrants/</a>
+
+
+            The website is currently using the plugin AMPforWP for AMP.
+
+            I will not be able to provide server access, you will provide HTML and CSS and I will upload to our server.
+        </p>
     </div>
 
     <div id="accordion">
@@ -86,14 +92,14 @@
             show.classList.toggle("hide");
             hide.classList.toggle("show");
             hide.classList.toggle("hide");
-            content.style.height = 'auto';
+            content.style.maxHeight = '800px';
         });
         hide.addEventListener("click", function () {
             show.classList.toggle("show");
             show.classList.toggle("hide");
             hide.classList.toggle("show");
             hide.classList.toggle("hide");
-            content.style.height = '0';
+            content.style.maxHeight = '0';
         });
     </script>
 </body>
