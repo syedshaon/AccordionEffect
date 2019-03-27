@@ -1,106 +1,112 @@
 <html>
-
-<head>
+  <head>
     <title>aaaaaaaaaaaaaa</title>
     <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
     <!-- Display webpage in edge mode/IE in highest supported mode -->
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="anotherDiv">
-        <h2>Accordion for Upwork</h2><br /><br />
-        <p>Create an HTML accordion that is responsive and works with Google AMP.<br /><br />
+      <h2>Accordion for Upwork</h2>
+      <br /><br />
+      <h3>
+        Client hired someone else for the job, most probably because he needed
+        Google AMP(More to Learn????????????????)
+      </h3>
+      <br /><br />
+      <p>
+        Create an HTML accordion that is responsive and works with Google
+        AMP.<br /><br />
 
-            It should look like the accordion titled "why hire us" that is on this page:<br />
-            <a
-                href="https://traffictickets.com/consequences-ny-nj-traffic-tickets-legal-undocumented-immigrants/">https://traffictickets.com/consequences-ny-nj-traffic-tickets-legal-undocumented-immigrants/</a>
+        It should look like the accordion titled "why hire us" that is on this
+        page:<br />
+        <a
+          href="https://traffictickets.com/consequences-ny-nj-traffic-tickets-legal-undocumented-immigrants/"
+          >https://traffictickets.com/consequences-ny-nj-traffic-tickets-legal-undocumented-immigrants/</a
+        >
 
+        The website is currently using the plugin AMPforWP for AMP.<br /><br />
 
-            The website is currently using the plugin AMPforWP for AMP.<br /><br />
-
-            I will not be able to provide server access, you will provide HTML and CSS and I will upload to our server.
-        </p>
+        I will not be able to provide server access, you will provide HTML and
+        CSS and I will upload to our server.
+      </p>
     </div>
 
     <div id="accordion">
-
-        <div id="accordHead"><span>Why Hire Us? </span><i id="toShow" class="fa fa-chevron-down show"></i><i id="toHide"
-                class="fa fa-chevron-up hide"></i></div>
-        <div id="accordContent" class="clearfix ">
-
-            <div id="accordContentVid">
-                <div> <iframe src="https://player.vimeo.com/video/189376725" frameborder="0"
-                        allowfullscreen="allowfullscreen"></iframe>
-                </div>
-            </div>
-
-            <div id="accordContentText">
-                <p>The Rosenblum Law Firm is the largest and <a
-                        href="https://traffictickets.com/client-reviews/">highest
-                        customer-rated</a> traffic violations law firm in both NY &amp; NJ. With an overall
-                    success rate of well over 90%, our firm has helped thousands of clients get excellent
-                    results.</p>
-                <a id="accordContentCall" href="tel:888-883-5529">Call For Free Consult: 888-883-5529</a>
-            </div>
-
-
+      <div id="accordHead">
+        <span>Why Hire Us? </span
+        ><i id="toShow" class="fa fa-chevron-down show"></i
+        ><i id="toHide" class="fa fa-chevron-up hide"></i>
+      </div>
+      <div id="accordContent" class="clearfix ">
+        <div id="accordContentVid">
+          <div>
+            <iframe
+              src="https://player.vimeo.com/video/189376725"
+              frameborder="0"
+              allowfullscreen="allowfullscreen"
+            ></iframe>
+          </div>
         </div>
 
+        <div id="accordContentText">
+          <p>
+            The Rosenblum Law Firm is the largest and
+            <a href="https://traffictickets.com/client-reviews/"
+              >highest customer-rated</a
+            >
+            traffic violations law firm in both NY &amp; NJ. With an overall
+            success rate of well over 90%, our firm has helped thousands of
+            clients get excellent results.
+          </p>
+          <a id="accordContentCall" href="tel:888-883-5529"
+            >Call For Free Consult: 888-883-5529</a
+          >
+        </div>
+      </div>
     </div>
 
     <div class="anotherDiv">
-        <h2>Accordion for Upwork</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.</p>
+      <h2>Accordion for Upwork</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script>
-        var show = document.getElementById("toShow");
-        var hide = document.getElementById("toHide");
-        var content = document.getElementById("accordContent");
+      var show = document.getElementById("toShow");
+      var hide = document.getElementById("toHide");
+      var content = document.getElementById("accordContent");
 
-
-        show.addEventListener("click", function () {
-            show.classList.toggle("show");
-            show.classList.toggle("hide");
-            hide.classList.toggle("show");
-            hide.classList.toggle("hide");
-            content.style.maxHeight = '800px';
-        });
-        hide.addEventListener("click", function () {
-            show.classList.toggle("show");
-            show.classList.toggle("hide");
-            hide.classList.toggle("show");
-            hide.classList.toggle("hide");
-            content.style.maxHeight = '0';
-        });
+      show.addEventListener("click", function() {
+        show.classList.toggle("show");
+        show.classList.toggle("hide");
+        hide.classList.toggle("show");
+        hide.classList.toggle("hide");
+        content.style.maxHeight = "800px";
+      });
+      hide.addEventListener("click", function() {
+        show.classList.toggle("show");
+        show.classList.toggle("hide");
+        hide.classList.toggle("show");
+        hide.classList.toggle("hide");
+        content.style.maxHeight = "0";
+      });
     </script>
-</body>
-
+  </body>
 </html>
